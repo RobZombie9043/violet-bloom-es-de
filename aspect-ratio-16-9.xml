@@ -1,0 +1,31 @@
+<!-- 
+4:3 aspect ratio
+-->
+<theme>
+	<!--
+	///
+	System View
+	///
+	-->
+	<view name="system">
+	
+	</view>
+	
+	<!--
+	///
+	Gamelist View
+	///
+	-->
+	<view name="gamelist">
+		<image name="crt-screen">
+            <maxSize>0.25 0.3333333</maxSize>
+        </image>
+		<video name="md_video">
+            <maxSize>0.25 0.3333333</maxSize>
+        </video>
+		<image name="crt-bezel">
+            <maxSize>0.28 0.3733333</maxSize>
+        </image>
+	</view>
+
+</theme>

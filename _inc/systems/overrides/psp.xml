@@ -1,0 +1,24 @@
+﻿<theme>
+	<view name="system">
+		<image name="controllerImage">
+			<visible>false</visible>
+		</image>
+	</view>
+	
+	<view name="gamelist">
+		<image name="md_thumbnail">
+			<!-- <pos>0.63 0.54</pos>
+			<maxSize>0.1115625 0.605555555555556</maxSize> -->
+		</image>
+		<image name="console">
+			<!-- <pos>0.71583 0.71349</pos> -->
+		</image>
+		<image name="controller">
+			<visible>false</visible>
+		</image>
+		<image name="physicalmedia">
+			<visible>true</visible>
+		</image>
+	 </view>
+	 
+</theme>

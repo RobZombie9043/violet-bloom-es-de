@@ -1,0 +1,43 @@
+<!-- 
+4:3 aspect ratio
+-->
+<theme>
+	<!--
+	///
+	System View
+	///
+	-->
+	<view name="system">
+		<text name="longdescription">
+			<size>0.35 0.14</size>
+		</text>
+		<image name="buttonA">				
+			<maxSize>0.35 0.05</maxSize>
+		</image>
+	</view>
+	
+	<!--
+	///
+	Gamelist View
+	///
+	-->
+	<view name="gamelist">
+		<image name="logo">
+			<pos>0.12 0.1472222178</pos> 
+		</image>
+		
+		<image name="crt-screen">
+            <pos>0.245 0.3825</pos>
+			<maxSize>0.25 0.28125</maxSize>
+        </image>
+		<video name="md_video">
+            <pos>0.245 0.38255</pos>
+			<maxSize>0.25 0.28125</maxSize>
+        </video>
+		<image name="crt-bezel">
+            <pos>0.245 0.3825</pos>
+			<maxSize>0.28 0.315</maxSize>
+        </image>
+	</view>
+
+</theme>

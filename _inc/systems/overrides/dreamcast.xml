@@ -1,0 +1,17 @@
+﻿<theme>
+	<!-- dreamcast specific fix -->
+	<view name="gamelist">
+
+		<image name="console">
+			<!-- <origin>0.75 1</origin>
+			<maxSize>0.65 0.65</maxSize>
+			<pos>0.79083 0.67729</pos> -->
+		</image>
+
+		<image name="controller">
+			<!-- <pos>0.7 0.552</pos>
+			<maxSize>0.14 0.14</maxSize> -->
+		</image>
+
+	</view>
+</theme>

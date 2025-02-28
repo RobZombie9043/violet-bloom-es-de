@@ -1,0 +1,101 @@
+
+<theme>
+	<!--
+	///
+	System View
+	///
+	-->
+	<view name="system">
+		<image name="background">
+			<path>./_inc/images/unisystem_background.jpg</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<zIndex>1</zIndex>
+		</image>
+
+		<carousel name="systemcarousel">
+			<origin>0 0.5</origin>
+			<pos>0.12 0.25</pos>
+			<size>0.3 0.2</size>
+			<type>vertical</type>
+			<staticImage>./_inc/systems/logo/${system.theme}.svg</staticImage>
+			<color>00000000</color>	
+			<itemScale>1</itemScale>
+			<itemSize>0.3 0.2</itemSize>
+			<maxItemCount>1</maxItemCount>
+			<itemHorizontalAlignment>left</itemHorizontalAlignment>
+			<textColor>ffffff</textColor>
+		</carousel>
+		
+		<text name="shortdescription">							
+			<origin>0 0</origin>
+			<pos>0.12 0.1055</pos>
+			<size>0.5 0.033</size>
+			<text>${systemReleaseYear}  ·  ${systemHardwareType}</text>
+			<fontPath>./_inc/fonts/SSTLight.TTF</fontPath>
+			<fontSize>${systemDescriptionFontSize}</fontSize>
+			<color>9b9a9a</color>
+			<horizontalAlignment>left</horizontalAlignment>
+		</text>
+
+		<text name="systemInfo">
+			<origin>0 0</origin>
+			<pos>0.12 0.3611</pos>
+			<size>0.4 0.039</size>
+			<fontPath>./_inc/fonts/SSTLight.TTF</fontPath>
+			<horizontalAlignment>left</horizontalAlignment>
+			<backgroundColor>00000000</backgroundColor>
+			<systemdata>gamecount</systemdata>
+			<color>372d5a</color>
+			<letterCase>uppercase</letterCase>
+			<fontSize>0.0315</fontSize>
+		</text>
+		
+		<text name="longdescription">
+			<origin>0 0</origin>
+			<pos>0.12 0.41</pos>
+			<size>0.28 0.14</size>
+			<fontPath>./_inc/fonts/SSTLight.TTF</fontPath>
+			<horizontalAlignment>left</horizontalAlignment>
+			<text>${systemDescription}</text>
+			<fontSize>${systemDescriptionFontSize}</fontSize>
+			<color>8F8F8F</color>
+			<lineSpacing>${systemDescriptionLineSpacing}</lineSpacing>
+			<container>true</container>
+		</text>
+		
+		<image name="consoleImage">
+			<origin>0.5 1</origin>
+			<pos>0.71 0.85</pos>
+			<maxSize>0.3 0.475</maxSize>
+			<path>./_inc/systems/console/${system.theme}.webp</path>
+			<zIndex>10</zIndex>
+		</image>
+		
+		<image name="controllerImage">
+			<origin>0 1</origin>
+			<pos>0.12 0.85</pos>
+			<maxSize>0.2 0.15</maxSize>
+			<path>./_inc/systems/controller/${system.theme}.webp</path>
+			<zIndex>10</zIndex>
+		</image>
+		
+		<image name="buttonA">						<!-- with 3.2.0 investigate dynamic change with helpsystem update -->
+			<path>./_inc/images/button.svg</path>
+			<origin>0 0</origin>
+			<pos>0.12 0.565</pos>
+			<maxSize>0.28 0.044</maxSize>
+		</image>
+
+		<helpsystem name="help">
+			<fontPath>./_inc/fonts/SSTRg.TTF</fontPath>
+			<fontSize>0.02</fontSize>
+			<origin>1 1</origin>
+			<pos>0.12 0</pos> 
+			<textColor>F8F8F8</textColor>
+			<iconColor>F8F8F8</iconColor>
+		</helpsystem>
+	</view>
+
+</theme>

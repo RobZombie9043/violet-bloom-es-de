@@ -1,0 +1,31 @@
+﻿<theme>
+	<view name="system">
+		<image name="consoleImage">
+			<pos>0.71 1</pos>
+			<maxSize>0.4 0.6</maxSize>
+		</image>
+		<image name="controllerImage">
+			<visible>true</visible>
+		</image>
+	</view>
+
+	<view name="gamelist">
+		<!-- <textlist name="gamelist">
+			<pos>0.5110 0.1726666666666667</pos>
+			<size>0.3375 0.7690011666666667</size>
+		</textlist>
+
+		<image name="console">
+			<origin>0 1</origin>
+			<pos>0.79583 1</pos>
+		</image> -->
+
+		<image name="controller">
+			<visible>true</visible>
+		</image>
+
+		<!-- <image name="md_thumbnail">
+			<visible>false</visible>
+		</image> -->
+	</view>
+</theme>

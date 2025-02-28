@@ -1,0 +1,7 @@
+﻿<theme>
+	<view name="gamelist">
+		<image name="console">
+			<origin>0.57 1</origin>
+		</image>
+	</view>
+</theme>

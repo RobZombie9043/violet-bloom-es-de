@@ -1,0 +1,225 @@
+
+<theme>
+	<!--
+	///
+	Gamelist View - Video View
+	///
+	-->
+	
+	<view name="gamelist">
+	
+		<!-- Background when browsing games-->
+		<image name="background">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./_inc/images/video_view_background.jpg</path>
+			<zIndex>1</zIndex>
+		</image>
+	  
+		<!-- System Logo & Game Name -->
+		<image name="logo">
+			<path>./_inc/systems/logo/${system.theme}.svg</path> 
+			<origin>0 0.5</origin>
+			<pos>0.12 0.0955555178</pos>
+			<maxSize>0.25 0.0955555555555556</maxSize>
+		</image>
+
+ 
+		<!-- Infopane Data _ Icons for rating / kid / hidden / favorite -->
+		<rating name="md_rating">
+			<pos>0.12 0.5888888888888889</pos>
+			<size>0.2515625 0.0277777777777778</size>
+			<filledPath>./_inc/images/star_filled.svg</filledPath>
+			<unfilledPath>./_inc/images/star_empty.svg</unfilledPath>
+			<color>ffa72b</color>
+		</rating>
+
+		<badges name="badges">
+			<origin>1 0</origin>
+			<pos>0.3715625 0.5888888888888889</pos>
+			<size>0.2 0.0277777777777778</size>
+			<horizontalAlignment>right</horizontalAlignment>
+			<itemMargin>0.002 -1</itemMargin>
+			<lines>1</lines>
+			<itemsPerLine>9</itemsPerLine>
+			<slots>all</slots>
+			<customBadgeIcon badge="folder">./_inc/images/badge-folder.svg</customBadgeIcon>
+			<customBadgeIcon badge="broken">./_inc/images/badge-broken.svg</customBadgeIcon>
+			<customBadgeIcon badge="completed">./_inc/images/badge-completed.svg</customBadgeIcon>
+			<customBadgeIcon badge="favorite">./_inc/images/badge-favorite.svg</customBadgeIcon>
+			<customBadgeIcon badge="kidgame">./_inc/images/badge-kidgame.svg</customBadgeIcon>
+			<customBadgeIcon badge="collection">./_inc/images/badge-collection.svg</customBadgeIcon>
+			<customBadgeIcon badge="controller">./_inc/images/badge-controller.svg</customBadgeIcon>
+			<customBadgeIcon badge="altemulator">./_inc/images/badge-altemulator.svg</customBadgeIcon>
+			<customBadgeIcon badge="manual">./_inc/images/badge-manual.svg</customBadgeIcon>
+			<badgeIconColor>bba35880</badgeIconColor>
+			<controllerSize>0.8</controllerSize>
+			<folderLinkSize>0.8</folderLinkSize>
+		</badges>
+		
+		<!-- Infopane Slashes And Icons -->
+		<image name="md_icon_release, md_icon_lastplayed, md__icon_players, md__icon_genre">
+			<origin>0 0.5</origin>
+			<maxSize>0.03 0.03</maxSize>
+			<color>a12215</color>
+			<metadataElement>true</metadataElement>
+		</image>
+		
+		<image name="md_icon_release">
+			<pos>0.119  0.6569444444</pos>
+			<path>./_inc/images/icon-release-date.svg</path>
+		</image>
+		
+		<image name="md_icon_lastplayed">
+			<pos>0.199  0.6569444444</pos>
+			<path>./_inc/images/icon-lastplayed.svg</path>
+		</image>
+
+		<image name="md__icon_players">
+			<pos>0.119 0.69861111</pos>
+			<path>./_inc/images/icon-players.svg</path>
+		</image>
+		
+		<image name="md__icon_genre">
+			<pos>0.199 0.69861111</pos>
+			<path>./_inc/images/icon-developer.svg</path>
+		</image>
+		
+		<!-- Infopane Data _ Text -->
+		<text name="md_players,md_genre">
+			<color>555555</color>
+			<fontPath>./_inc/fonts/SSTLight.TTF</fontPath>
+			<fontSize>${gamelistMetadataFontSize}</fontSize>
+		</text>
+		
+		<datetime name="md_lastplayed,md_releasedate">
+			<color>555555</color>
+			<fontPath>./_inc/fonts/SSTLight.TTF</fontPath>
+			<fontSize>${gamelistMetadataFontSize}</fontSize>
+		</datetime>
+		
+		<datetime name="md_releasedate">
+			<origin>0 0.5</origin>
+			<pos>0.145 0.6569444444</pos>
+			<!-- <pos>0.196 0.69861111</pos> -->
+			<size>0.05 0.0277777777777778</size>
+			<metadata>releasedate</metadata>
+			<format>%Y</format>
+			<defaultValue>-</defaultValue>
+		</datetime>
+		
+		<datetime name="md_lastplayed">
+			<origin>0 0.5</origin>
+			<pos>0.226 0.6569444444</pos>
+			<size>0.1455625 0.0277777777777778</size>
+			<metadata>lastplayed</metadata>
+			<defaultValue>Never</defaultValue>
+		</datetime>
+
+		<text name="md_players">
+			<origin>0 0.5</origin>
+			<pos>0.145 0.69861111</pos>
+			<size>0.05 0.0277777777777778</size>
+			<metadata>players</metadata>
+			<horizontalAlignment>left</horizontalAlignment>
+			<defaultValue>-</defaultValue>
+		</text>
+
+		<text name="md_genre">
+			<origin>0 0.5</origin>
+			<pos>0.226 0.69861111</pos>
+			<size>0.1455625 0.0277777777777778</size>
+			<metadata>genre</metadata>
+			<defaultValue>-</defaultValue>
+		</text>
+
+		<text name="md_description">
+			<pos>0.12 0.7496666666666667</pos>
+			<size>0.2515625 0.16</size>
+			<color>999999</color>
+			<fontSize>${gamelistDescriptionFontSize}</fontSize>
+			<fontPath>./_inc/fonts/SSTLight.TTF</fontPath>
+			<metadata>description</metadata>
+		</text>
+		
+		<!-- Game Selector -->
+		<textlist name="gamelist">
+			<pos>0.512875 0.5888888888888889</pos> 
+			<size>0.3375 0.3290011666666667</size>
+			<selectorColor>00000000</selectorColor>
+			<selectedColor>9b9a9a</selectedColor>
+			<primaryColor>FFFFFF35</primaryColor>
+			<secondaryColor>FFFFFF30</secondaryColor>
+			<fontPath>./_inc/fonts/SSTLight.TTF</fontPath>
+			<fontSize>${gamelistTextlistFontSize}</fontSize>
+			<letterCase>none</letterCase>
+			<horizontalAlignment>left</horizontalAlignment>
+			<lineSpacing>1.4</lineSpacing> 
+			<horizontalMargin>0.00625</horizontalMargin>
+		 </textlist>
+		 
+		 <!-- cover -->
+         <image name="md_thumbnail">
+            <origin>0 1</origin>
+            <pos>0.519125 0.54</pos>
+            <maxSize>0.1515625 0.4</maxSize>
+			<imageType>cover</imageType>
+         </image>
+
+		<!-- console -->
+		<image name="console">
+			<origin>0.6 1</origin>
+			<pos>1 0.54</pos>
+			<maxSize>0.22 0.4</maxSize>
+			<path>./_inc/systems/console/${system.theme}.webp</path>
+		</image>
+
+		<image name="controller, physicalmedia">
+			<origin>0 1</origin>
+			<pos>0.69 0.54</pos>
+			<maxSize>0.10 0.10</maxSize>
+		</image>
+		
+		<image name="controller">
+			<path>./_inc/systems/controller/${system.theme}.webp</path>
+		</image>
+		
+		<image name="physicalmedia">
+			<imageType>physicalmedia</imageType>
+			<visible>false</visible>
+		</image>
+	
+		<!-- VIDEO  -->
+		<image name="crt-screen">
+            <origin>0.5 0.5</origin>
+            <pos>0.245 0.3533333</pos>
+            <path>./_inc/images/crt-screen.svg</path>
+            <zIndex>60</zIndex>
+        </image>
+        <video name="md_video">
+			<origin>0.5 0.5</origin>
+            <pos>0.245 0.3533333</pos>
+            <delay>0.9</delay>
+            <default>./_inc/videos/static.mp4</default>
+			<zIndex>80</zIndex>
+        </video>
+		<image name="crt-bezel">
+			<origin>0.5 0.5</origin>
+            <pos>0.245 0.3533333</pos>
+            <path>./_inc/images/crt-bezel.svg</path>
+			<zIndex>100</zIndex>
+        </image>
+		
+		<helpsystem name="help">
+			<fontPath>./_inc/fonts/SSTRg.TTF</fontPath>
+			<fontSize>0.02</fontSize>
+			<origin>1 1</origin>
+			<pos>0.12 0</pos> 
+			<textColor>F8F8F8</textColor>
+			<iconColor>F8F8F8</iconColor>
+		</helpsystem>
+		
+	</view>
+
+</theme>

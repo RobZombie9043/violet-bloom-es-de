@@ -1,0 +1,17 @@
+﻿<theme>
+	<view name="system">
+		<image name="controllerImage">
+			<visible>false</visible>
+		</image>
+	</view>
+	
+	<!-- EDIT VIEW LIST  -->
+	<view name="gamelist">
+		<image name="controller">
+			<visible>false</visible>
+		</image>
+		<image name="physicalmedia">
+			<visible>true</visible>
+		</image>
+	</view>
+</theme>

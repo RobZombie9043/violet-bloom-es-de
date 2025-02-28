@@ -1,0 +1,13 @@
+﻿<theme>
+	<view name="system">
+		<image name="controllerImage">
+			<visible>false</visible>
+		</image>
+	</view>
+	
+	<view name="gamelist">
+		<image name="controller">
+			<visible>false</visible>
+		</image>
+	</view>
+</theme>

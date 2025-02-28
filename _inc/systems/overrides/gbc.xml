@@ -1,0 +1,19 @@
+﻿<theme>
+	<view name="system">
+		<image name="controllerImage">
+			<visible>false</visible>
+		</image>
+	</view>
+	
+	<view name="gamelist">
+		<!-- <image name="console">
+			<pos>0.87 0.54</pos>
+		</image> -->
+		<image name="controller">
+			<visible>false</visible>
+		</image>
+		<image name="physicalmedia">
+			<visible>true</visible>
+		</image>
+	</view>
+</theme>

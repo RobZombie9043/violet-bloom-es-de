@@ -1,0 +1,14 @@
+﻿<theme>
+	<!-- N64 Specific Device Fix-->
+	<view name="gamelist">
+		<image name="console">
+			<!-- <maxSize>0.55 0.55</maxSize>
+			<pos>0.81783 0.68729</pos> -->
+		</image>
+
+		<image name="controller">
+			<!-- <pos>0.7 0.552</pos>
+			<maxSize>0.14 0.14</maxSize> -->
+		</image>
+	</view>
+</theme>

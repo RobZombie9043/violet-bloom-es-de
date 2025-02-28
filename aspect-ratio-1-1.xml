@@ -1,0 +1,72 @@
+<!-- 
+4:3 aspect ratio
+-->
+<theme>
+	<!--
+	///
+	System View
+	///
+	-->
+	<view name="system">
+		<text name="longdescription">
+			<size>0.38 0.14</size>
+		</text>
+		<image name="buttonA">				
+			<maxSize>0.38 0.044</maxSize>
+		</image>
+	</view>
+	
+	<!--
+	///
+	Gamelist View
+	///
+	-->
+	<view name="gamelist">
+		<image name="logo">
+			<pos>0.12 0.232222178</pos>
+		</image>
+		
+		<image name="crt-screen">
+            <pos>0.245 0.435</pos>
+			<maxSize>0.25 0.1875</maxSize>
+        </image>
+		<video name="md_video">
+            <pos>0.245 0.435</pos>
+			<maxSize>0.25 0.1875</maxSize>
+        </video>
+		<image name="crt-bezel">
+            <pos>0.245 0.435</pos>
+            <maxSize>0.28 0.21</maxSize>
+        </image>
+		
+		<image name="md_icon_release">
+			<pos>0.119  0.6569444444</pos>
+			<path>./_inc/images/icon-release-date.svg</path>
+		</image>
+		<image name="md_icon_lastplayed">
+			<visible>false</visible>
+		</image>
+		<image name="md__icon_players">
+			<visible>false</visible>
+		</image>
+		<image name="md__icon_genre">
+			<pos>0.119 0.69861111</pos>
+		</image>
+		
+		<datetime name="md_releasedate">
+			<pos>0.165 0.6569444444</pos>
+			<size>0.2065625 0.0277777777777778</size>
+		</datetime>
+		<datetime name="md_lastplayed">
+			<visible>false</visible>
+		</datetime>
+		<text name="md_players">
+			<visible>false</visible>
+		</text>
+		<text name="md_genre">
+			<pos>0.165 0.69861111</pos>
+			<size>0.2065625 0.0277777777777778</size>
+		</text>
+	</view>
+
+</theme>
